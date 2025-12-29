@@ -27,8 +27,6 @@ Purpose: 42
 
 ![](profile/stats.svg)
         </td>
-    </tr>
-    <tr>
         <td align="center"><a href="https://github.com/beGG1#gh-light-mode-only"><img src="https://github-readme-streak-stats.herokuapp.com/?user=beGG1&theme=default"/></a><a href="https://github.com/beGG1#gh-dark-mode-only"><img src="https://github-readme-streak-stats.herokuapp.com/?user=beGG1&theme=tokyonight&hide_border=true"/></a></td>
     </tr>
     <tr>
