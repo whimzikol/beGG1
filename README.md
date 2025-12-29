@@ -1,6 +1,5 @@
 <p>
-<img align="left" src="https://github.com/beGG1/beGG1/blob/main/img/cropped.jpg" alt="[お茶 by Itakana](https://www.pixiv.net/en/artworks/67012082)" width="320" /> 
-
+<img src="img/cropped.jpg" align="left" alt="お茶 by Itakana" width="320" />
 <pre>
 beGG1@github
 -------------------------
