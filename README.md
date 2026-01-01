@@ -24,15 +24,27 @@ Purpose: 42
 <table>
     <tr>
         <td align="center">
-           <img alt="Github Stats" src="profile/stats.svg" />
+            <a href="https://github.com/beGG1#gh-dark-mode-only">
+                <img alt="Github Stats" src="profile/stats.svg" />
+            </a>
+            <a href="https://github.com/beGG1#gh-light-mode-only">
+            </a>
         </td>
         <td align="center">
-           <img alt="Github Streak" src="profile/streak.svg" />
+            <a href="https://github.com/beGG1#gh-dark-mode-only">
+                <img alt="Github Streak" src="profile/streak.svg" />
+            </a>
+            <a href="https://github.com/beGG1#gh-light-mode-only">
+            </a>
         </td>
     </tr>
     <tr>
         <td colspan="2" align="center">
-            <img alt="My GitHub Stats" src="https://raw.githubusercontent.com/beGG1/beGG1/output/github-contribution-grid-snake-dark.svg" />
+            <a href="https://github.com/beGG1#gh-dark-mode-only">
+                <img alt="My GitHub Stats" src="https://raw.githubusercontent.com/beGG1/beGG1/output/github-contribution-grid-snake-dark.svg" />
+            </a>
+            <a href="https://github.com/beGG1#gh-light-mode-only">
+            </a>
         </td>
     </tr>
 </table>
