@@ -26,7 +26,10 @@ Purpose: 42
 
 ![](profile/stats.svg)
         </td>
-        <td align="center"><a href="https://github.com/beGG1#gh-light-mode-only"><img src="https://github-readme-streak-stats.herokuapp.com/?user=beGG1&theme=default"/></a><a href="https://github.com/beGG1#gh-dark-mode-only"><img src="https://github-readme-streak-stats.herokuapp.com/?user=beGG1&theme=tokyonight&hide_border=true"/></a></td>
+        <td align="center">
+        
+![](profile/streak.svg)
+        </td>
     </tr>
     <tr>
         <td colspan="2" align="center"><a href="https://github.com/beGG1#gh-light-mode-only"><img src="https://raw.githubusercontent.com/beGG1/beGG1/output/github-contribution-grid-snake-default.svg#gh-light-mode-only" alt="My GitHub Stats"/></a><a href="https://github.com/beGG1#gh-dark-mode-only"><img src="https://raw.githubusercontent.com/beGG1/beGG1/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only" alt="My GitHub Stats"/></a></td>
