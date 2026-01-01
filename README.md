@@ -31,7 +31,7 @@ Purpose: 42
     </tr>
     <tr>
         <td colspan="2" align="center">
-            <img src="https://raw.githubusercontent.com/beGG1/beGG1/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only" alt="My GitHub Stats"/>
+            <img alt="My GitHub Stats" src="https://raw.githubusercontent.com/beGG1/beGG1/output/github-contribution-grid-snake-dark.svg" />
         </td>
     </tr>
 </table>
