@@ -23,12 +23,10 @@ Purpose: 42
 <table>
     <tr>
         <td align="center">
-
-![](profile/stats.svg)
+           <img alt="Github Stats" src="profile/stats.svg" />
         </td>
         <td align="center">
-
-![](profile/streak.svg)
+           <img alt="Github Streak" src="profile/streak.svg" />
         </td>
     </tr>
     <tr>
