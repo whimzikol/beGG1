@@ -27,7 +27,7 @@ Purpose: 42
 ![](profile/stats.svg)
         </td>
         <td align="center">
-        
+
 ![](profile/streak.svg)
         </td>
     </tr>
