@@ -37,14 +37,22 @@ jobs:
           token: ${{ secrets.GH_README_STREAK_TOKEN || secrets.GITHUB_TOKEN }}
 
       # -------------------------------
-      # Generate GitHub README stats card
+      # Generate GitHub README stats cards (dark + light)
       # -------------------------------
-      - name: Generate stats card
+      - name: Generate stats card (dark)
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight&hide_border=true
-          path: profile/stats.svg
+          path: profile/stats_dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate stats (light)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=default&hide_border=true
+          path: profile/stats_light.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       # -------------------------------
@@ -68,13 +76,21 @@ jobs:
       # -------------------------------
       # Render streak SVG locally
       # -------------------------------
-      - name: Generate streak card
+      - name: Generate streak card (dark)
         run: |
           cd tools/github-readme-streak-stats
           TOKEN='${{ secrets.GITHUB_TOKEN }}' \
           GITHUB_USER='${{ github.repository_owner }}' \
           php -r 'chdir("src"); $_GET=["user"=>getenv("GITHUB_USER"),"theme"=>"tokyonight","hide_border"=>"true"]; $_REQUEST=$_GET; $_SERVER["TOKEN"]=getenv("TOKEN"); require "index.php";' \
-            > ../../profile/streak.svg
+            > ../../profile/streak_dark.svg
+
+      - name: Generate streak (light)
+        run: |
+          cd tools/github-readme-streak-stats
+          TOKEN=${{ secrets.GITHUB_TOKEN }} \
+          GITHUB_USER=${{ github.repository_owner }} \
+          php -r 'chdir("src"); $_GET=["user"=>getenv("GITHUB_USER"),"theme"=>"default","hide_border"=>"true"]; $_REQUEST=$_GET; $_SERVER["TOKEN"]=getenv("TOKEN"); require "index.php";' \
+            > ../../profile/streak_light.svg
 
       # -------------------------------
       # Commit BOTH cards to your default branch
@@ -83,7 +99,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add profile/stats.svg profile/streak.svg
+          git add profile/*.svg
           git commit -m "Update README cards" || exit 0
           git push
 
@@ -95,13 +111,15 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake-light.svg?palette=github-light
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # -------------------------------
       # Push snake svgs to output branch
       # -------------------------------
-      - name: push github-contribution-grid-snake.svg to the output branch
+      - name: push snake svgs to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output

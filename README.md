@@ -24,27 +24,24 @@ Purpose: 42
 <table>
     <tr>
         <td align="center">
-            <a href="https://github.com/beGG1#gh-dark-mode-only">
-                <img alt="Github Stats" src="profile/stats.svg" />
-            </a>
-            <a href="https://github.com/beGG1#gh-light-mode-only">
-            </a>
+           <img src="profile/stats_dark.svg#gh-dark-mode-only" alt="Stats (Dark)" />
+           <img src="profile/stats_light.svg#gh-light-mode-only" alt="Stats (Light)" />
         </td>
         <td align="center">
-            <a href="https://github.com/beGG1#gh-dark-mode-only">
-                <img alt="Github Streak" src="profile/streak.svg" />
-            </a>
-            <a href="https://github.com/beGG1#gh-light-mode-only">
-            </a>
+           <img src="profile/streak_dark.svg#gh-dark-mode-only" alt="Streak (Dark)" />
+           <img src="profile/streak_light.svg#gh-light-mode-only" alt="Streak (Light)" />
         </td>
     </tr>
     <tr>
         <td colspan="2" align="center">
-            <a href="https://github.com/beGG1#gh-dark-mode-only">
-                <img alt="My GitHub Stats" src="https://raw.githubusercontent.com/beGG1/beGG1/output/github-contribution-grid-snake-dark.svg" />
-            </a>
-            <a href="https://github.com/beGG1#gh-light-mode-only">
-            </a>
+           <picture>
+              <source media="(prefers-color-scheme: light)"
+                      srcset="https://raw.githubusercontent.com/beGG1/beGG1/output/github-contribution-grid-snake-light.svg">
+              <source media="(prefers-color-scheme: dark)"
+                      srcset="https://raw.githubusercontent.com/beGG1/beGG1/output/github-contribution-grid-snake-dark.svg">
+              <img alt="GitHub contribution snake"
+                   src="https://raw.githubusercontent.com/beGG1/beGG1/output/github-contribution-grid-snake-light.svg">
+            </picture>
         </td>
     </tr>
 </table>
