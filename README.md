@@ -23,10 +23,12 @@ Purpose: 42
 
 <table>
     <tr>
+       <!--
         <td align="center">
            <img src="profile/stats_dark.svg#gh-dark-mode-only" alt="Stats (Dark)" />
            <img src="profile/stats_light.svg#gh-light-mode-only" alt="Stats (Light)" />
         </td>
+       -->
         <td align="center">
            <img src="profile/streak_dark.svg#gh-dark-mode-only" alt="Streak (Dark)" />
            <img src="profile/streak_light.svg#gh-light-mode-only" alt="Streak (Light)" />
